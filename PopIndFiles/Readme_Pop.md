@@ -1,0 +1,1 @@
+The files in this folder show the individuals used for the data application on chromosome 16 in Hermann et al. 2018. 
