@@ -18,4 +18,5 @@ The R-script *Vcf2FastaLDJump* contains the pipeline of the data download from t
 
 .... under construction .....
 
+Test for further changes . 
 
