@@ -14,7 +14,7 @@ The R-script *Vcf2FastaLDJump* contains the pipeline of the data download from t
 * We selected the first 50 individuals based on the individuals names and loaded this file in the workspace. 
 * Then, we applied the *vcfR2DNAbin* function from the R-package **vcfR**. 
 * Then we created the *fasta*-file with the *write.dna* function from the **ape** R-package. 
-* Finally, we applied [**LDJump**][https://github.com/PhHermann/LDJump] following the recommendations of 1kb segment lengths and 0.35 quantile for the bias correction. 
+* Finally, we applied [**LDJump**](<https://github.com/PhHermann/LDJump>) following the recommendations of 1kb segment lengths and 0.35 quantile for the bias correction. 
 * These steps were again applied for the four populations (IBS, FIN, TSI, GBR).
 
 
