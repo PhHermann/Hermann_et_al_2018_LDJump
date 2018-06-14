@@ -9,7 +9,7 @@ The R-script *Vcf2FastaLDJump* contains the pipeline of the data download from t
 
 # Data Management for Human Chromosome 21 
 
-* We downloaded the *vcf*-File for the populations of TSI, FIN, GBR, and IBS from [here](<http://phase3browser.1000genomes.org/Homo_sapiens/Location/Overview?r=21:41187000-41290679>) by using the "*Get VCF Data*" option. 
+* We downloaded the *vcf*-File for the populations of TSI, FIN, GBR, and IBS from [here](<http://phase3browser.1000genomes.org/Homo_sapiens/Location/Overview?r=21:41187000-41290679>) by using the "*Get VCF Data*" option. Following to that, we selected the "*By population(s)*" option in order to filter the data. 
 * For the later following conversion, we also downloaded the reference of this region by using the "*Export Data*" option ([from here](<http://phase3browser.1000genomes.org/Homo_sapiens/Location/Overview?r=21:41187000-41290679>)) as *fasta*-file and read it with the *read.dna* function from the R-package **ape**. 
 * We selected the first 50 individuals based on the individuals names and loaded this file in the workspace. 
 * Then, we applied the *vcfR2DNAbin* function from the R-package **vcfR**. 
@@ -17,4 +17,4 @@ The R-script *Vcf2FastaLDJump* contains the pipeline of the data download from t
 * Finally, we applied [**LDJump**](<https://github.com/PhHermann/LDJump>) following the recommendations of 1kb segment lengths and 0.35 quantile for the bias correction. 
 * These steps were again applied for the four populations (IBS, FIN, TSI, GBR).
 
-
+test
