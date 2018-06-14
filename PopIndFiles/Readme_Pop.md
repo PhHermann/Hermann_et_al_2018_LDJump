@@ -16,3 +16,15 @@ The R-script *Vcf2FastaLDJump* contains the pipeline of the data download from t
 * Then we created the *fasta*-file with the *write.dna* function from the **ape** R-package. 
 * Finally, we applied [**LDJump**](<https://github.com/PhHermann/LDJump>) following the recommendations of 1kb segment lengths and 0.35 quantile for the bias correction. 
 * These steps were again applied for the four populations (IBS, FIN, TSI, GBR).
+
+# Hotspots on Chromosome 16 
+
+We provide the hotspot locations for all four populations (as separate sheets) in an Excel-file *Hotspots_Chr16_LDJump*. This file contains the start and end position of the hotspots as well as the corresponding recombination rate. Notice that we calculated the background recombination rates as mean of all recombination rates smaller than the median of all estimated rates. These background rates are listed in the following table: 
+
+
+| Population Name  | Background recombination rate |
+| ------------- | ------------- |
+| TSI  | 0.003984501  |
+| FIN  | 0.003169624  |
+| GBR  | 0.003527607  |
+| IBS  | 0.004126738  |
