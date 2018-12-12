@@ -15,7 +15,7 @@ getflank2 <- function(chr, start.position, end.position) { #
 }
 ref.seq = as.DNAbin(DNAStringSet(getflank2(chr = "chr16", start.position=1, end.position = seqlengths(Hsapiens)[16])))
 
-pops = c("TSI", "FIN", "GBR", "IBS")
+pops = c("TSI", "FIN", "GBR", "IBS", "CEU")
 len = 90330000
 parts = 200
 wid = len/parts
