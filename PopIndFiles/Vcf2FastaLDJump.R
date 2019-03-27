@@ -27,7 +27,7 @@ for(pop in pops) {
  for(i in 1:parts) {
   sta.bp = (i-1)*wid+1
   end.bp = i*wid
-  system(paste0("/programs/vcftools/src/cpp/vcftools --gzvcf /data/SimuPH/GenomesData/ALL.chr16.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz --chr 16 --from-bp ", as.integer(end.bp), " --to-bp ", as.integer(end.bp), " --keep /data/SimuPH/GenomesData/", pop, "_sel.id --recode --recode-INFO-all --out ", pop, "_sel_", as.integer(sta.bp), "_", as.integer(end.bp)))
+  system(paste0("/programs/vcftools/src/cpp/vcftools --gzvcf /data/SimuPH/GenomesData/ALL.chr16.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz --chr 16 --from-bp ", as.integer(sta.bp), " --to-bp ", as.integer(end.bp), " --keep /data/SimuPH/GenomesData/", pop, "_sel.id --recode --recode-INFO-all --out ", pop, "_sel_", as.integer(sta.bp), "_", as.integer(end.bp)))
   fileName = paste0(pop, "_sel_", as.integer(sta.bp), "_", as.integer(end.bp), ".recode.vcf")
   test = read.vcfR(file = fileName, limit = 1e+07, nrows = -1, skip = 0, cols = NULL, convertNA = F, verbose = T)
   pos.duplicates = which(duplicated(getID(test)))
